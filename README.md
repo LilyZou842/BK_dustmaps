@@ -61,7 +61,7 @@ The resulting plots can be found [here](https://drive.google.com/drive/folders/1
 
 `environment.yml` lists the required packages. Either create a new conda environment using the .yaml file, or add packages as needed.
 
-Clone this repository by running `git clone BK_dustmaps`. Change `data_dir` and `plt_dir` in `src/my_package/constants.py` to where you wish to store large binary data and generated plots.
+Clone this repository by running `git clone https://github.com/LilyZou842/BK_dustmaps`. Change `data_dir` and `plt_dir` in `src/my_package/constants.py` to where you wish to store large binary data and generated plots.
 
 To run the notebooks, download and save to `data_dir` the required datasets: `Rv_map_new.h5` and all 10 `xpparams_v2_zenodo_*.h5` files from the authors' data repository (https://zenodo.org/records/11394477) and FITS files from Planck (https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/previews/COM_CompMap_ThermalDust-commander_2048_R2.00/index.html and https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/previews/COM_CompMap_QU-thermaldust-commander_2048_R3.00_full/index.html).
 
