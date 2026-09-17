@@ -1,0 +1,38 @@
+# Conda environment for notebooks
+#
+#   conda env create -f environment.yml
+#   conda activate bk_dustmaps
+#
+# The notebooks import `loader`, `utils` and `constants` as top-level modules;
+# each one puts ../src/my_package on sys.path, so run them with
+# notebooks/ as the working directory.
+name: bk_dustmaps
+
+channels:
+  - conda-forge
+
+dependencies:
+  # Runtime
+  - python>=3.11
+  - pip
+
+  # Jupyter
+  - jupyter
+  - ipykernel
+
+  # Science
+  - numpy>=1.26
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - pandas>=2.0
+
+  # HDF5 I/O (stellar catalog, Rv_map_new.h5, BK24_radec_pvar.h5)
+  - h5py>=3.10
+
+  # Astronomy / HEALPix
+  - astropy>=6.0
+  - astropy-healpix>=1.0
+  - healpy>=1.17
+
+  # Stitching PNG frames into video in make_video.ipynb
+  - opencv>=4.8
