@@ -3,7 +3,7 @@
 #   conda env create -f environment.yml
 #   conda activate bk_dustmaps
 #
-# The notebooks import `loader`, `utils` and `constants` as top-level modules;
+# The notebooks import `loader` and `constants` as top-level modules;
 # each one puts ../src/my_package on sys.path, so run them with
 # notebooks/ as the working directory.
 name: bk_dustmaps

@@ -3,8 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "plotting_dustmaps"
+name = "BK_dustmaps"
 version = "1.0.0"
+readme = "README.md"
+authors = [name = "Lily Zou"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = ["src/my_package"]
